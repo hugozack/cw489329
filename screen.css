@@ -5,19 +5,19 @@
 }
 
 .bg-cover-image2 {
-	background: url(images/studio3.jpg) center center no-repeat;
+	background: url(images/SpiritedAwayBanner.jpg) center center no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
 }
 
-.bg-page2-cover {
+.bg-cover-image3 {
 	background: url(images/vinyl7.jpg) center center no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
 }
 
-.bg-page3-cover {
-	background: url(images/vinyl6.jpg) center center no-repeat;
+.bg-cover-image4 {
+	background: url(images/PrincessKaguyaBanner.jpg) center center no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
 }
@@ -36,7 +36,7 @@
 /* Load Custom Fonts */
 
 .font-serif {
-font-family: 'Libre Baskerville', serif;
+font-family: Arial, Helvetica, sans-serif;;
 }
 
 .font-sans {
