@@ -1,3 +1,4 @@
+/*banner*/
 .bg-cover-image {
 	background: url(images/aaa.jpg) center center no-repeat;
 	background-attachment: fixed;
@@ -22,18 +23,7 @@
 	background-size: 100% 100%;
 }
 
-.bg-header {
-  background: url(https://picsum.photos/1920/1920/?random) center center no-repeat;
-  background-attachment: fixed;
-}
-
-.bg-quote {
-  background: url(images/vinyl8.jpg) center center no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-
-/* Load Custom Fonts */
+/*Fonts*/
 
 .font-serif {
 font-family: Arial, Helvetica, sans-serif;;
@@ -48,65 +38,57 @@ font-family: 'Anton', sans-serif;
 	color: #000;
 }
 
-
-/*------------- VIDEO -------------*/
-
-.video-title {
-  background: #fff;
-}
-
 @media only screen and (min-width : 768px) {
+  /* Parallax*/
+  .parallax-container {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  
+  .parallax {
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    height: 100vh;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+  }
+  
+  .content {
+    display: block;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+  }
+ 
+  /* Video Player*/
   .video-wrapper {
-    height: 0;
-    padding-bottom: 56.25%;
+    height: 100vh;
+    overflow: hidden;
     position: relative;
     width: 100%;
   }
 
   .video-wrapper video {
-    height: 100%;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
     position: absolute;
-      top: 0;
-      left: 0;
-    width: 100%;
+      top: 50%;
+      left: 50%;
+    transform: translate(-50%,-50%);
+    width: auto;
   }
 
   .video-title {
-    background-color: rgba(255,255,255, 1);
+    background-color: rgba(0,0,0, .7);
     position: absolute;
       top: 50%;
       left: 50%;
     transform: translateX(-50%);
     z-index: 99;
-
   }
-}
-
-
-
-
-
-/* --------------- MEDIA Q ---------------*/
-
-@media(max-width: 399px) {
-	.bg-cover-image {
-		background: url(images/cover.jpg) center center no-repeat;
-		background-attachment: fixed;
-		background size: 100% 100%; 
-	}
-
-	
-	.bg-quote {
-  background: url(images/vinyl8.jpg) center center no-repeat;
-  background-attachment: fixed;
-  
-}
-	.mediaq {
-		background-size: 200% 200%;
-
-	}
-}
-
-.h1 {
-	background-color: rgba(0,0,0,0);
 }
